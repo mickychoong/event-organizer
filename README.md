@@ -44,6 +44,35 @@ WebMindAI Features:
 * Robust [reproducibility features](#reproducibility-features).
 * Integrated [LeaderBoard](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard).
 
+## 🚀 Launch experiments
+
+```python
+# Import your agent configuration extending bgym.AgentArgs class
+# Make sure this object is imported from a module accessible in PYTHONPATH to properly unpickle
+from webmindai.agents.generic_agent import AGENT_4o_MINI 
+
+from webmindai.experiments.study import make_study
+
+study = make_study(
+    benchmark="miniwob",  # or "webarena", "workarena_l1" ...
+    agent_args=[AGENT_4o_MINI],
+    comment="My first study",
+)
+
+study.run(n_jobs=5)
+```
+
+Relaunching incomplete or errored tasks
+
+```python
+from webmindai.experiments.study import Study
+study = Study.load("/path/to/your/study/dir")
+study.find_incomplete(include_errors=True)
+study.run()
+```
+
+See [main.py](main.py) for launching experiments with various configurations. Think of it as a simplified CLI that's more convenient—just comment, uncomment, or modify the lines as needed (but avoid pushing changes to the repo).
+
 ## 🛠️ Setup WebMindAI
 
 WebMindAI requires python 3.11 or higher.
@@ -89,36 +118,7 @@ Try your own agent:
 
 ```bash
 webmindai-assistant --agent_config="module.path.to.your.AgentArgs"
-```
-
-## 🚀 Launch experiments
-
-```python
-# Import your agent configuration extending bgym.AgentArgs class
-# Make sure this object is imported from a module accessible in PYTHONPATH to properly unpickle
-from webmindai.agents.generic_agent import AGENT_4o_MINI 
-
-from webmindai.experiments.study import make_study
-
-study = make_study(
-    benchmark="miniwob",  # or "webarena", "workarena_l1" ...
-    agent_args=[AGENT_4o_MINI],
-    comment="My first study",
-)
-
-study.run(n_jobs=5)
-```
-
-Relaunching incomplete or errored tasks
-
-```python
-from webmindai.experiments.study import Study
-study = Study.load("/path/to/your/study/dir")
-study.find_incomplete(include_errors=True)
-study.run()
-```
-
-See [main.py](main.py) for launching experiments with various configurations. Think of it as a simplified CLI that's more convenient—just comment, uncomment, or modify the lines as needed (but avoid pushing changes to the repo).
+ ```
 
 ### Job Timeouts
 
