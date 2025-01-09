@@ -17,9 +17,7 @@
 <br>
 [🏆 Leaderboard](#-leaderboard) &nbsp;|&nbsp; 
 [🤖 Build Your Agent](#-implement-a-new-agent) &nbsp;|&nbsp;
-[↻ Reproducibility](#-reproducibility) &nbsp;|&nbsp;
-[💪 BrowserGym](https://github.com/ServiceNow/BrowserGym)
-
+[↻ Reproducibility](#-reproducibility)
 
 
 ![WebMindAI-removebg-preview](https://github.com/user-attachments/assets/8c381e36-3580-420b-b18e-4c52ddf13766)
@@ -34,15 +32,12 @@
 > [!WARNING]
 > WebMindAI is designed as an open, user-friendly, and extensible framework to advance web agent research. It is not intended for consumer use. Proceed with caution!
 
-WebMindAI is a framework tailored for developing and evaluating agents across various [benchmarks](#-supported-benchmarks) supported by [BrowserGym](https://github.com/ServiceNow/BrowserGym). For more details, refer to our [BrowserGym ecosystem paper](https://arxiv.org/abs/2412.05467).
-
 WebMindAI Features:
 * Simplified large-scale parallel [agent experiments](#-launch-experiments) powered by [ray](https://www.ray.io/).
-* Modular components for creating agents within the BrowserGym environment.
+* Modular components for creating agents within the Gym environment.
 * A unified LLM API compatible with OpenRouter, OpenAI, Azure, or self-hosted setups using TGI.
 * Optimized for running benchmarks such as WebArena.
 * Robust [reproducibility features](#reproducibility-features).
-* Integrated [LeaderBoard](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard).
 
 ## 🚀 Launch experiments
 
@@ -171,10 +166,6 @@ To visualize results, follow these steps:
 After selecting these options, you can view the trace of your agent's performance on the task. Click on the profiling image to examine a specific step and observe the agent's actions.
 
 **⚠️ Note**: Gradio is still evolving and may exhibit unexpected behavior. Version 5.5 has been stable so far. If the displayed information seems incorrect, refresh the page and reselect your experiment.
-
-## 🏆 Leaderboard
-
-Check out the official unified [leaderboard](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard) for all benchmarks. Experiments are being added with more reference points using GenericAgent, and tools are being developed to automate study submissions to the leaderboard.
 
 ## 🤖 Implement a New Agent
 
