@@ -4,8 +4,6 @@
 
 
 [![pypi](https://badge.fury.io/py/webmindai.svg)](https://pypi.org/project/webmindai/)
-[![PyPI - License](https://img.shields.io/pypi/l/agentlab?style=flat-square)]([https://opensource.org/licenses/MIT](http://www.apache.org/licenses/LICENSE-2.0))
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/agentlab?style=flat-square)](https://pypistats.org/packages/agentlab)
 [![GitHub star chart](https://img.shields.io/github/stars/webmindai/WebMindAI?style=flat-square)](https://star-history.com/#ServiceNow/WebMindAI)
 [![Code Format](https://github.com/webmindai/WebMindAI/actions/workflows/code_format.yml/badge.svg)](https://github.com/webmindai/WebMindAI/actions/workflows/code_format.yml)
 [![Tests](https://github.com/webmindai/WebMindAI/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/webmindai/WebMindAI/actions/workflows/unit_tests.yml)
@@ -45,23 +43,6 @@ WebMindAI Features:
 * Optimized for running benchmarks such as WebArena.
 * Robust [reproducibility features](#reproducibility-features).
 * Integrated [LeaderBoard](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard).
-
-
-## 🎯 Supported Benchmarks
-
-| Benchmark | Setup  <br> Link | # Task <br> Template| Seed  <br> Diversity | Max  <br> Step | Multi-tab | Hosted Method | BrowserGym <br> Leaderboard |
-|-----------|------------|---------|----------------|-----------|-----------|---------------|----------------------|
-| [WebArena](https://webarena.dev/) | [setup](https://github.com/ServiceNow/BrowserGym/blob/main/browsergym/webarena/README.md) | 812 | None | 30 | yes | self hosted (docker) | soon |
-| [WorkArena](https://github.com/ServiceNow/WorkArena) L1 | [setup](https://github.com/ServiceNow/WorkArena?tab=readme-ov-file#getting-started) | 33 | High | 30 | no | demo instance | soon |
-| [WorkArena](https://github.com/ServiceNow/WorkArena) L2 | [setup](https://github.com/ServiceNow/WorkArena?tab=readme-ov-file#getting-started) | 341 | High | 50 | no | demo instance | soon |
-| [WorkArena](https://github.com/ServiceNow/WorkArena) L3 | [setup](https://github.com/ServiceNow/WorkArena?tab=readme-ov-file#getting-started) | 341 | High | 50 | no | demo instance | soon |
-| [WebLinx](https://mcgill-nlp.github.io/weblinx/) | - | 31586 | None | 1 | no | self hosted (dataset) | soon |
-| [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | [setup](https://github.com/ServiceNow/BrowserGym/blob/main/browsergym/visualwebarena/README.md) | 910 | None | 30 | yes | self hosted (docker) | soon |
-| [AssistantBench](https://assistantbench.github.io/) | [setup](https://github.com/ServiceNow/BrowserGym/blob/main/browsergym/assistantbench/README.md) | 214 | None | 30 | yes | live web | soon |
-| [GAIA](https://huggingface.co/spaces/gaia-benchmark/leaderboard) (soon) | - | - | None | - | - | live web | soon |
-| [Mind2Web-live](https://huggingface.co/datasets/iMeanAI/Mind2Web-Live) (soon) | - | - | None | - | - | live web | soon |
-| [MiniWoB](https://miniwob.farama.org/index.html) | [setup](https://github.com/ServiceNow/BrowserGym/blob/main/browsergym/miniwob/README.md) | 125 | Medium | 10 | no | self hosted (static files) | soon |
-
 
 ## 🛠️ Setup WebMindAI
 
