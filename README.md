@@ -27,7 +27,8 @@
 
 ## 🎥 Demo Video: Using WebMindAI to Search for AI Coins on DexScreener
 
-[Watch the video:](https://github.com/webmindai/WebMindAI/main/demo/demo_video.mp4)
+[![Watch the video](https://github.com/user-attachments/assets/0fc986c3-04ad-4a48-ba02-468fcf950344)](https://www.webmindai.com)
+
 
 This demo shows how WebMindAI navigates to [DexScreener](https://dexscreener.com), searches for AI-related coins, and analyzes the results. Explore how WebMindAI automates further complex web interactions:
 
