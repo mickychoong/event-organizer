@@ -14,6 +14,7 @@
 [🤖 Assistant](#-ui-assistant) &nbsp;|&nbsp; 
 [🚀 Launch Experiments](#-launch-experiments) &nbsp;|&nbsp;
 [🔍 Analyse Results](#-analyse-results) &nbsp;|&nbsp;
+[🎥 Watch Demo](#-demo-video-using-webmindai-to-search-for-ai-coins-on-dexscreener) &nbsp;|&nbsp;
 <br>
 [🏆 Leaderboard](#-leaderboard) &nbsp;|&nbsp; 
 [🤖 Build Your Agent](#-implement-a-new-agent) &nbsp;|&nbsp;
@@ -22,12 +23,16 @@
 
 ![WebMindAI-removebg-preview](https://github.com/user-attachments/assets/8c381e36-3580-420b-b18e-4c52ddf13766)
 
+</div>
+
+## 🎥 Demo Video: Using WebMindAI to Search for AI Coins on DexScreener
+
+[Watch the video:](https://github.com/webmindai/WebMindAI/main/demo/demo_video.mp4)
+
+This demo shows how WebMindAI navigates to [DexScreener](https://dexscreener.com), searches for AI-related coins, and analyzes the results. Explore how WebMindAI automates further complex web interactions:
 
 
 [Demo solving tasks:](https://github.com/ServiceNow/BrowserGym/assets/26232819/e0bfc788-cc8e-44f1-b8c3-0d1114108b85)
-
-
-</div>
 
 > [!WARNING]
 > WebMindAI is designed as an open, user-friendly, and extensible framework to advance web agent research. It is not intended for consumer use. Proceed with caution!
