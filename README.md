@@ -14,9 +14,8 @@
 [🤖 Assistant](#-ui-assistant) &nbsp;|&nbsp; 
 [🚀 Launch Experiments](#-launch-experiments) &nbsp;|&nbsp;
 [🔍 Analyse Results](#-analyse-results) &nbsp;|&nbsp;
-[🎥 Watch Demo](#-demo-video-using-webmindai-to-search-for-ai-coins-on-dexscreener) &nbsp;|&nbsp;
 <br>
-[🏆 Leaderboard](#-leaderboard) &nbsp;|&nbsp; 
+[🎥 Watch Demo](#-demo-video-using-webmindai-to-search-for-ai-coins-on-dexscreener) &nbsp;|&nbsp;
 [🤖 Build Your Agent](#-implement-a-new-agent) &nbsp;|&nbsp;
 [↻ Reproducibility](#-reproducibility)
 
@@ -24,14 +23,6 @@
 ![WebMindAI-removebg-preview](https://github.com/user-attachments/assets/8c381e36-3580-420b-b18e-4c52ddf13766)
 
 </div>
-
-## 🎥 Demo Video: Using WebMindAI to Search for AI Coins on DexScreener
-
-[![Watch the video](https://github.com/user-attachments/assets/0fc986c3-04ad-4a48-ba02-468fcf950344)](https://www.webmindai.com)
-
-
-This demo shows how WebMindAI navigates to [DexScreener](https://dexscreener.com), searches for AI-related coins, and analyzes the results. Explore how WebMindAI automates further complex web interactions:
-
 
 [Demo solving tasks:](https://github.com/ServiceNow/BrowserGym/assets/26232819/e0bfc788-cc8e-44f1-b8c3-0d1114108b85)
 
@@ -106,6 +97,13 @@ export AZURE_OPENAI_API_KEY=<your azure api key> # if using azure models
 export AZURE_OPENAI_ENDPOINT=<your endpoint> # if using azure models
 ```
 </details>
+
+## 🎥 Demo Video: Using WebMindAI to Search for AI Coins on DexScreener
+
+[![Watch the video](https://github.com/user-attachments/assets/0fc986c3-04ad-4a48-ba02-468fcf950344)](https://www.webmindai.com)
+
+
+This demo shows how WebMindAI navigates to [DexScreener](https://dexscreener.com), searches for AI-related coins, and analyzes the results.
 
 ## 🤖 UI-Assistant 
 
