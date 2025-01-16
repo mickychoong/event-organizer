@@ -20,7 +20,7 @@
 [↻ Reproducibility](#-reproducibility)
 
 
-![WebMindAI-removebg-preview]([https://github.com/user-attachments/assets/8c381e36-3580-420b-b18e-4c52ddf13766](https://imgur.com/hnfT5N8))
+![WebMindAI-removebg-preview]((https://imgur.com/hnfT5N8))
 
 </div>
 
