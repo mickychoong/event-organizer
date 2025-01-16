@@ -24,7 +24,6 @@
 </div>
 
 [Demo solving tasks:](https://github.com/ServiceNow/BrowserGym/assets/26232819/e0bfc788-cc8e-44f1-b8c3-0d1114108b85)
-![WebMindAI](https://imgur.com/hnfT5N8)
 
 > [!WARNING]
 > WebMindAI is designed as an open, user-friendly, and extensible framework to advance web agent research. It is not intended for consumer use. Proceed with caution!
