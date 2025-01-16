@@ -20,7 +20,7 @@
 [↻ Reproducibility](#-reproducibility)
 
 
-(https://imgur.com/hnfT5N8)
+![WebMindAI](https://imgur.com/hnfT5N8)
 </div>
 
 [Demo solving tasks:](https://github.com/ServiceNow/BrowserGym/assets/26232819/e0bfc788-cc8e-44f1-b8c3-0d1114108b85)
