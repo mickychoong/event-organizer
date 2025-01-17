@@ -20,7 +20,7 @@
 [↻ Reproducibility](#-reproducibility)
 
 
-![WebMindAI-removebg-preview](C:\Users\fafan\OneDrive\文档\GitHub\Images\Untitled design (9).png)
+![WebMindAI-removebg-preview]Untitled design (9).png
 
 </div>
 
