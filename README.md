@@ -20,7 +20,7 @@
 [↻ Reproducibility](#-reproducibility)
 
 
-![WebMindAI-removebg-preview]Untitled design (9).png
+![WebMindAI-removebg-preview](Images/Untitled%20design%20(9).png)
 
 </div>
 
