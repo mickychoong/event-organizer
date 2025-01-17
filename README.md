@@ -3,24 +3,24 @@
     
 
 
-[![pypi](https://badge.fury.io/py/webmindai.svg)](https://pypi.org/project/webmindai/)
-[![GitHub star chart](https://img.shields.io/github/stars/webmindai/WebMindAI?style=flat-square)](https://star-history.com/#ServiceNow/WebMindAI)
+[![pypi](https://badge.fury.io/py/mymeta.svg)](https://pypi.org/project/mymeta/)
+[![GitHub star chart](https://img.shields.io/github/stars/mymeta/mymeta?style=flat-square)](https://star-history.com/#ServiceNow/mymeta)
 
 
 
 
 
-[🛠️ Setup](#%EF%B8%8F-setup-webmindai) &nbsp;|&nbsp; 
+[🛠️ Setup](#%EF%B8%8F-setup-mymeta) &nbsp;|&nbsp; 
 [🤖 Assistant](#-ui-assistant) &nbsp;|&nbsp; 
 [🚀 Launch Experiments](#-launch-experiments) &nbsp;|&nbsp;
 [🔍 Analyse Results](#-analyse-results) &nbsp;|&nbsp;
 <br>
-[🎥 Watch Demo](#-demo-video-using-webmindai-to-search-for-ai-coins-on-dexscreener) &nbsp;|&nbsp;
+[🎥 Watch Demo](#-demo-video-using-mymeta-to-search-for-ai-coins-on-dexscreener) &nbsp;|&nbsp;
 [🤖 Build Your Agent](#-implement-a-new-agent) &nbsp;|&nbsp;
 [↻ Reproducibility](#-reproducibility)
 
 
-![WebMindAI-removebg-preview](Images/Untitled%20design%20(9).png)
+![mymeta-removebg-preview](Images/Untitled%20design%20(9).png)
 
 </div>
 
@@ -41,9 +41,9 @@ MYMETA Features:
 ```python
 # Import your agent configuration extending bgym.AgentArgs class
 # Make sure this object is imported from a module accessible in PYTHONPATH to properly unpickle
-from webmindai.agents.generic_agent import AGENT_4o_MINI 
+from mymeta.agents.generic_agent import AGENT_4o_MINI 
 
-from webmindai.experiments.study import make_study
+from mymeta.experiments.study import make_study
 
 study = make_study(
     benchmark="miniwob",  # or "webarena", "workarena_l1" ...
@@ -57,7 +57,7 @@ study.run(n_jobs=5)
 Relaunching incomplete or errored tasks
 
 ```python
-from webmindai.experiments.study import Study
+from mymeta.experiments.study import Study
 study = Study.load("/path/to/your/study/dir")
 study.find_incomplete(include_errors=True)
 study.run()
@@ -65,12 +65,12 @@ study.run()
 
 See [main.py](main.py) for launching experiments with various configurations. Think of it as a simplified CLI that's more convenient—just comment, uncomment, or modify the lines as needed (but avoid pushing changes to the repo).
 
-## 🛠️ Setup WebMindAI
+## 🛠️ Setup mymeta
 
 MYMETA requires python 3.11 or higher.
 
 ```bash
-pip install webmindai
+pip install mymeta
 ```
 
 Make sure to prepare the required benchmark according to the instructions provided in the [setup
@@ -106,13 +106,13 @@ This demo shows how MYMETA navigates to [DexScreener](https://dexscreener.com), 
 Use an assistant to work for you (at your own cost and risk).
 
 ```bash
-webmindai-assistant --start_url https://www.google.com
+mymeta-assistant --start_url https://www.google.com
 ```
 
 Try your own agent: 
 
 ```bash
-webmindai-assistant --agent_config="module.path.to.your.AgentArgs"
+mymeta-assistant --agent_config="module.path.to.your.AgentArgs"
  ```
 
 ### Job Timeouts
@@ -134,7 +134,7 @@ A single job corresponds to running one agent on one task. When performing ablat
 ## 🔍 Analyse Results
 
 ```python
-from webmindai.analyze import inspect_results
+from mymeta.analyze import inspect_results
 
 # load the summary of all experiments of the study in a dataframe
 result_df = inspect_results.load_result_df("path/to/your/study")
@@ -152,7 +152,7 @@ https://github.com/user-attachments/assets/06c4dac0-b78f-45b7-9405-003da4af6b37
 
 In a terminal, execute:
 ```bash
-webmindai-xray
+mymeta-xray
 ```
 
 You can load previous or ongoing experiments from the `AGENTLAB_EXP_ROOT` directory and visualize the results using a Gradio interface.
@@ -169,9 +169,9 @@ After selecting these options, you can view the trace of your agent's performanc
 
 ## 🤖 Implement a New Agent
 
-For inspiration, review the `MostBasicAgent` implementation in [webmindai/agents/most_basic_agent/most_basic_agent.py](src/webmindai/agents/most_basic_agent/most_basic_agent.py). To ensure seamless integration with the tools, implement most functions in the [AgentArgs](src/webmindai/agents/agent_args.py#L5) API and extend `bgym.AbstractAgentArgs`.
+For inspiration, review the `MostBasicAgent` implementation in [mymeta/agents/most_basic_agent/most_basic_agent.py](src/mymeta/agents/most_basic_agent/most_basic_agent.py). To ensure seamless integration with the tools, implement most functions in the [AgentArgs](src/mymeta/agents/agent_args.py#L5) API and extend `bgym.AbstractAgentArgs`.
 
-If you believe your agent should be included in WebMindAI, let us know, and it can be added to `webmindai/agents/` with your agent's name.
+If you believe your agent should be included in mymeta, let us know, and it can be added to `mymeta/agents/` with your agent's name.
 
 ## ↻ Reproducibility
 
