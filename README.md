@@ -27,9 +27,9 @@
 [Demo solving tasks:](https://github.com/ServiceNow/BrowserGym/assets/26232819/e0bfc788-cc8e-44f1-b8c3-0d1114108b85)
 
 > [!WARNING]
-> MYMETAis designed as an open, user-friendly, and extensible framework to advance web agent research. It is not intended for consumer use. Proceed with caution!
+> MYMETA is designed as an open, user-friendly, and extensible framework to advance web agent research. It is not intended for consumer use. Proceed with caution!
 
-MYMETAFeatures:
+MYMETA Features:
 * Simplified large-scale parallel [agent experiments](#-launch-experiments) powered by [ray](https://www.ray.io/).
 * Modular components for creating agents within the Gym environment.
 * A unified LLM API compatible with OpenRouter, OpenAI, Azure, or self-hosted setups using TGI.
@@ -67,7 +67,7 @@ See [main.py](main.py) for launching experiments with various configurations. Th
 
 ## 🛠️ Setup WebMindAI
 
-MYMETArequires python 3.11 or higher.
+MYMETA requires python 3.11 or higher.
 
 ```bash
 pip install webmindai
@@ -99,7 +99,7 @@ export AZURE_OPENAI_ENDPOINT=<your endpoint> # if using azure models
 </details>
 
 
-This demo shows how MYMETAnavigates to [DexScreener](https://dexscreener.com), searches for AI-related coins, and analyzes the results.
+This demo shows how MYMETA navigates to [DexScreener](https://dexscreener.com), searches for AI-related coins, and analyzes the results.
 
 ## 🤖 UI-Assistant 
 
@@ -129,7 +129,7 @@ A single job corresponds to running one agent on one task. When performing ablat
 
 ⚠️ **Note for (Visual)WebArena**: These benchmarks include task dependencies to prevent instance "corruption" between tasks. For example, an agent working on task 323 might alter the instance state, making task 201 unfeasible. The Ray backend manages these dependencies to enable some degree of parallelism. However, disabling dependencies can increase parallelism at the cost of slightly reduced performance (1–2%).
 
-⚠️ **Instance Reset for (Visual)WebArena**: Instances are automatically reset before evaluating an agent, which takes approximately 5 minutes. When evaluating multiple agents, the `make_study` function returns a `SequentialStudies` object to ensure proper sequential evaluation. Currently, MYMETAdoes not support evaluations across multiple instances. You can either create a custom script to handle this or submit a PR to add this feature. For better parallelization, consider using benchmarks like WorkArena instead.
+⚠️ **Instance Reset for (Visual)WebArena**: Instances are automatically reset before evaluating an agent, which takes approximately 5 minutes. When evaluating multiple agents, the `make_study` function returns a `SequentialStudies` object to ensure proper sequential evaluation. Currently, MYMETA does not support evaluations across multiple instances. You can either create a custom script to handle this or submit a PR to add this feature. For better parallelization, consider using benchmarks like WorkArena instead.
 
 ## 🔍 Analyse Results
 
