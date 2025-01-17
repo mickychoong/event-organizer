@@ -100,10 +100,7 @@ export AZURE_OPENAI_ENDPOINT=<your endpoint> # if using azure models
 
 ## 🎥 Demo Video: Using WebMindAI to Search for AI Coins on DexScreener
 
-<video width="600" controls>
-  <source src="https://github.com/mickychoong/event-organizer/blob/main/Images/xKQoGYM.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the video](https://github.com/mickychoong/event-organizer/blob/main/Images/xKQoGYM.mp4)
 
 
 This demo shows how WebMindAI navigates to [DexScreener](https://dexscreener.com), searches for AI-related coins, and analyzes the results.
