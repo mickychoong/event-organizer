@@ -6,7 +6,7 @@
 [![pypi](https://badge.fury.io/py/webmindai.svg)](https://pypi.org/project/webmindai/)
 [![GitHub star chart](https://img.shields.io/github/stars/webmindai/WebMindAI?style=flat-square)](https://star-history.com/#ServiceNow/WebMindAI)
 [![Code Format](https://github.com/webmindai/WebMindAI/actions/workflows/code_format.yml/badge.svg)](https://github.com/webmindai/WebMindAI/actions/workflows/code_format.yml)
-[![Tests](https://github.com/webmindai/WebMindAI/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/webmindai/WebMindAI/actions/workflows/unit_tests.yml)
+
 
 
 
